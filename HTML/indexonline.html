@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cursos  Zona 37</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+<div class="group">
+  <form action="registro.php" method="POST">
+  <h2><em>Registro de Usuario</em></h2>
+  
+     
+      <label for="nombre">Nombre <span><em>(requerido)</em></span></label>
+      <input type="text" name="nombre" class="form-input" required/>   
+      
+      <label for="apellido">Apellido <span><em>(requerido)</em></span></label>
+      <input type="text" name="apellido" class="form-input" required/>             
+      
+      <label for="email">Email <span><em>(requerido)</em></span></label>
+      <input type="email" name="email" class="form-input" />
+     
+      <label for="usuario">Usuario<span><em>(requerido)</em></span></label>
+      <input type="text" name="user" class="form-input" />
+
+      <label for="contraseña">Contraseña <span><em>(requerido)</em></span></label>
+      <input type="password" name="contraseña" class="form-input" />
+
+      <label for="escuela">Escuela<span><em>(requerido)</em></span></label>
+      <input type="text" name="escuela" class="form-input" />
+      
+      <label for="funcion">Función<span><em>(requerido)</em></span></label>
+      <select name="funcion" size="1">
+   <option value="">Selecciona</option>
+  <option value="Maestro frente a grupo">Maestro frente a grupo</option>
+  <option value="Director">Director</option>
+  <option value="Subdirector">Subdirector</option>
+  <option value="Promotor">Promotor</option>
+
+</select>
+
+     <center> <input class="form-btn" name="submit" type="submit" value="Registrarse" /></center>
+    </p>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* styles Defensoría pública */
+
+.text-forms {text-align: right;}
+.panel-default, .panelPleca {border-radius: 10px 10px 0px 0px!important;}
+.panelPleca {background-color:#41736f!important; color:#fff!important; font-weight: bold; }
+.lineTop {border-top: 2px solid #ccc;}
+.wordBreak {word-break: break-all;}
+.marginButton {margin: 10px 35px;}
+
+
+
+/* se requiere este mediaquery para el funcionamiento correcto entre 991 y 768	*/ 
+@media (max-width: 991px) {
+	.borderTextSearch {padding: 0px;}
+    .spacerForms {margin: 0px 0px 15px 0px;}
+    }
+
+@media (max-width: 768px) {
+    .text-forms {text-align: left;}
+    .borderTextSearch {margin: 0px;}
+    }
+
+@media (max-width: 450px) {
+    .marginButton {margin: 10px 15px;}
+    }

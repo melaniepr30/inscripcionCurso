@@ -1,0 +1,82 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> SISTEMA DE INSCRIPCIONES</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Meera+Inimai|Reem+Kufi" rel="stylesheet">
+</head>
+<!-- CONTENEDOR PRINCIPAL-->
+<body>
+	<<!--CABECERA-->
+		<header>
+			<!--imagen animada-->
+				<figure id="logo">
+					<img src="img/ed.png" alt="">
+				</figure>
+			<!--Titulo del header-->
+				<h1>Dirección General de Servicios Educativos Iztapalapa <br> Dirección Regional de Servicios Educativos Juárez <br> Zona Escolar 37</h1>
+
+				<p id="nom_user" class="nom_user_sesion">
+						<button id="sun" onclick="csesion();">Hola</button>
+						<span id="opcs"></span>
+				</p>
+
+
+		</header>
+	<!--MENU DE NAVEGACIÓN-->
+		<nav>
+			<!--Lista NO ordenada-->
+				<ul>
+					<li class="l_color"><a href="index.html" class="l_link">Inicio</a></li>
+					<li class="l_color"><a href="cursos.html" class="l_link">Talleres</a></li>
+					<li class="l_color"><a href="registro.html" class="l_link">Registrarse</a></li>
+					
+					<li id="isesion">
+						<a href="" id="mostraris" class="icon-enter" onclick="fisesion(); return false;">Iniciar Sesión</a>
+					</li>
+				</ul>
+		</nav>
+	<!--FORMULARIO DE LOGIN-->
+		<div id="faccess" class="class_acceso">
+			<form action="sesion.php" id="formulario"method="POST"> <!--coon el "post" se esconde el texto que envíe-->
+				<input type="text" id="user" name="user" placeholder="Usuario" required>  
+				<input type="password" id="pass" name="pass" placeholder="Contraseña" required> <!--el tipo password nos sirve para ocultar el password-->
+				<input class="form-btn" name="enviar" type="submit" value="Enviar" />
+			</form>
+				<!--<button type="submit" id="bentrada" onclick="">Enviar</button>-->
+				
+		</div>
+
+	<section>
+		<div class="group">
+		  <form action="registro.php" method="POST">
+		  <h2><em>¡Su registro ha sido completado!</em></h2>
+
+		  </form>
+		</div>
+	</section>
+
+	
+	<!--FOOTER-->
+		<footer>
+			<p>
+				<strong>Creado por Melanie Peña</strong>
+			</p>
+			<p>
+				Contacto: star.girl01@gmail.com
+			</p>
+			<div id="logos_cine">
+				<figure id="admin">
+					<a href=""><img src="img/admin.png" alt=""></a>
+				</figure>
+			</div>
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src= "js/index.js"></script>
+</body>
+</html>
